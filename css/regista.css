@@ -1,0 +1,153 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url("fonts/proxima-nova/ProximaNovaT-Thin.eot") format("eot"), url("fonts/proxima-nova/ProximaNovaT-Thin.svg")
+format("svg"), url("fonts/proxima-nova/ProximaNovaT-Thin.ttf") format("truetype"), url("fonts/proxima-nova/ProximaNovaT-Thin.woff") format("woff"), url("fonts/proxima-nova/ProximaNovaT-Thin.woff2") format("woff2"); }
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Proxima Nova';
+}
+
+header {
+	width: 100%;
+	background-color: #3B3B3B;
+}
+
+.navbar {
+	background: white; 
+	box-shadow: 0px 0px 20px 0px black;
+}
+.navbar .toggle, .navbar .brand {
+display: inline-block; }
+.navbar .link {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+	color: #003755;
+text-transform: uppercase; }
+.navbar .link:hover, .navbar .link:active {
+border-bottom: 1px dotted #003755; }
+.navbar .brand {
+	width: 10em;
+	text-align: center;
+	padding: 1em;
+	background: #01CBEF;
+color: white; }
+.navbar .toggle {
+	padding: 1em;
+	color: white;
+vertical-align: middle; }
+
+@media (min-width: 48em) {
+	.navbar {
+	display: flex; }
+	.navbar .left, .navbar .right {
+		display: flex;
+	flex: 1; }
+	.navbar .link {
+	width: auto; }
+	.navbar .right {
+	justify-content: flex-end; }
+	.navbar .toggle {
+display: none; } }
+
+.navbar div {
+display: none; }
+@media (min-width: 48em) {
+	.navbar div {
+display: flex; } }
+
+@media (max-width: 48em) {
+	.navbar {
+		background-color: #01CBEF;
+	}
+	.navbar .link {
+		text-align: left;
+	}
+	.navbar.active .toggle {
+		background: #01CBEF;
+	color: white; }
+	.navbar.active .dropdown {
+	display: none; }
+	.navbar.active div {
+display: block; 
+background-color: white; } }
+/*isto é a parte de cima mas so  com o logo e a dizer login. */
+
+.active {
+	color: #C29E75 !important;
+}
+
+.flex {
+	display: flex;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.caixa2 {
+	width: 100%;
+	padding: 30px;
+}
+
+h1 {
+	text-align: center;
+	color: #003755;
+}
+
+h3 {
+	color: #003755;
+	text-transform: uppercase;
+}
+
+.caixa2 input[type = "text"], input[type = "password"], input[type = "email"] {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid black;
+}
+
+.caixa2 input[type = "date"] {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	border:1px solid black;
+}
+
+.caixa2 select{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	border:1px solid black;
+}
+
+input[type = "submit"]:hover{
+	background: #003755;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	background:rgb(22, 159, 201);
+	border: none;
+	padding: 15px;
+	min-width: 30%;
+	color:white;
+	font-size: large;
+	margin-top: 30px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+#voltar {
+	color: rgb(22, 159, 201);
+	text-decoration: none;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	text-transform: uppercase;
+}

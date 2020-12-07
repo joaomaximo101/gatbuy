@@ -1,0 +1,117 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #3B3B3B;
+    position: fixed; }
+
+    .navbar {
+        background: white; }
+        .navbar .toggle, .navbar .brand {
+          display: inline-block; }
+        .navbar .link {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 1em;
+          text-decoration: none;
+          color: #003755;
+          text-transform: uppercase; }
+          .navbar .link:hover, .navbar .link:active {
+            border-bottom: 1px dotted #003755; }
+        .navbar .brand {
+          width: 10em;
+          text-align: center;
+          padding: 1em;
+          background: #01CBEF;
+          color: white; }
+        .navbar .toggle {
+          padding: 1em;
+          color: black;
+          vertical-align: middle; }
+      
+      @media (min-width: 48em) {
+        .navbar {
+          display: flex; }
+          .navbar .left, .navbar .right {
+            display: flex;
+            flex: 1; }
+          .navbar .link {
+            width: auto; }
+          .navbar .right {
+            justify-content: flex-end; }
+          .navbar .toggle {
+            display: none; } }
+      
+      .navbar div {
+        display: none; }
+        @media (min-width: 48em) {
+          .navbar div {
+            display: flex; } }
+      
+      @media (max-width: 48em) {
+        .navbar.active .toggle {
+          background: seagreen;
+          color: white; }
+        .navbar.active .dropdown {
+          display: none; }
+        .navbar.active div {
+          display: block; } }
+/*isto é a parte de cima mas so  com o logo e a dizer login. */
+.caixa3{
+    width: 400px;
+    padding: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:white;
+    
+  }
+.caixa3 h1{
+    color:rgb(22, 159, 201);
+    font-size:200%;
+    text-decoration: none;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .caixa3 h3{
+    color:rgb(7, 5, 2);
+    font-size: small;
+    position: relative;
+    top:10px;
+    left:-15%;
+}
+
+.caixa3 input[type = "text"]{
+    padding: 10px;
+    width: 130%;
+    position: relative;
+    left:-15%;
+    border:1px solid black;
+}
+
+.caixa3 input[type = "submit"]:hover{
+    background:rgb(45, 11, 124); 
+    border: none;
+  }
+  .caixa3 input[type="submit"]{
+    background:rgb(22, 159, 201);
+    border: none;
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    width: 30%;
+    color:white;
+    font-size: large;
+
+}
